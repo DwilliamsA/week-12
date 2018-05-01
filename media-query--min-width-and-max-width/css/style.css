@@ -1,0 +1,46 @@
+#container {
+   width: 90%;
+   margin: auto;
+   padding: 24px;
+}
+
+#container::before {
+   content: 'No media query';
+   float: left;
+   padding: 24px;
+   margin: 0 32px 7px 0;
+}
+
+@media (min-width: 961px) and (max-width: 1200px) {
+   #container {
+      background-color: #59a4ff;
+   }
+
+   #container::before {
+      content: '(min-width: 961px) and (max-width: 1200px)';
+      background-color: #9bd4c6;
+   }
+}
+
+
+@media (min-width: 769px) and (max-width: 960px) {
+   #container {
+      background-color: #3782dd;
+   }
+
+   #container::before {
+      content: '(min-width: 769px) and (max-width: 960px)';
+      background-color: #79b2a4;
+   }
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+   #container {
+      background-color: #1560aa;
+   }
+
+   #container::before {
+      content: '(min-width: 400px) and (max-width: 768px)';
+      background-color: #579082;
+   }
+}
