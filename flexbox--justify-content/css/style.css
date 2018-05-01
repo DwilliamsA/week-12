@@ -1,0 +1,69 @@
+html {
+   font-size: 32px;
+}
+
+div {
+   width: 75px;
+   height: 75px;
+}
+
+div:nth-child(1) {
+   background-color: #f00;
+}
+
+div:nth-child(2) {
+   background-color: #0f0;
+}
+
+div:nth-child(3) {
+   background-color: #00f;
+}
+
+div:nth-child(4) {
+   background-color: #000;
+}
+
+section::after {
+   position: absolute;
+   background-color: #eee;
+   margin: 0;
+   padding: 18px;
+   top: 100px;
+   left: 10px;
+}
+
+@media (min-width: 801px) {
+   section::after {
+      content: 'space-between';
+   }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+   section::after {
+      content: 'space-evenly';
+   }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+   section::after {
+      content: 'space-around';
+   }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+   section::after {
+      content: 'flex-end';
+   }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+   section::after {
+      content: 'center';
+   }
+}
+
+@media (max-width: 400px) {
+   section::after {
+      content: 'flex-start';
+   }
+}
