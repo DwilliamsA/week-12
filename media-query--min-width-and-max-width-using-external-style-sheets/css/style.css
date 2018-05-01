@@ -1,0 +1,12 @@
+#container {
+   width: 90%;
+   margin: auto;
+   padding: 24px;
+}
+
+#container::before {
+   content: 'No media query';
+   float: left;
+   padding: 24px;
+   margin: 0 32px 7px 0;
+}

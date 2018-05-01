@@ -1,0 +1,8 @@
+#container {
+   background-color: #59a4ff;
+}
+
+#container::before {
+   content: '(min-width: 961px) and (max-width: 1200px)';
+   background-color: #9bd4c6;
+}
