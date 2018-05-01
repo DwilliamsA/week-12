@@ -1,5 +1,6 @@
 #container {
-   width: 1024px;
+   /*width: 1024px;*/
+   width: 80%;
    margin: auto;
 }
 
@@ -12,24 +13,24 @@
    background-color: #8AA0B2;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 960px) {
    #container {
-      width: 768px;
+      width: 755px;
    }
 
    #container::before {
-      content: 'max-width: 1200px';
-      background-color: #4A6888;
+      content: 'min-width: 960px';
+      background-color: #09325E;
    }
 }
 
-@media (max-width: 960px) {
+@media (min-width: 1200px) {
    #container {
-      width: 80%;
+      width: 960px;
    }
 
    #container::before {
-      content: 'max-width: 960px';
-      background-color: #09325E;
+      content: 'min-width: 1200px';
+      background-color: #4A6888;
    }
 }
